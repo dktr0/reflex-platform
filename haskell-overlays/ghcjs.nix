@@ -46,7 +46,7 @@ self: super: {
   network = haskellLib.overrideCabal super.network (drv: {
     revision = null;
     editedCabalFile = null;
-    patches = (drv.patches or []) ++ [ ./ghcjs-network.patch ];
+    # patches = (drv.patches or []) ++ [ ./ghcjs-network.patch ];
   });
 
   # These packages require doctest
